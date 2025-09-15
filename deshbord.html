@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Abinash Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <nav class="bg-[#d7ecfd] shadow-md px-6 py-3">
+        <div class="flex justify-between items-center">
+            <!-- Left: Logo -->
+            <div class="flex items-center space-x-3">
+                <img src="/logo/Abinashlogo.png" alt="Logo" class="h-10 w-10">
+                <span class="text-sm font-semibold">ABINASH FOUNDATION</span>
+            </div>
+
+            <!-- Right: Desktop menu -->
+            <div class="hidden md:flex items-center space-x-4">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-regular fa-flag"></i>
+                <i class="fa-solid fa-circle-question"></i>
+
+                <!-- User Info -->
+                <div class="text-gray-800 text-right">
+                    <p class="text-sm">Rashedul Karim</p>
+                    <p class="text-blue-600 text-xs">rashedulkarim123@gmail.com</p>
+                </div>
+
+                <!-- Profile Icon -->
+                <i class="fa-solid fa-user"></i>
+
+                <!-- Logout Button -->
+                <button class="bg-[#484e5b] text-white px-4 py-1 rounded-lg hover:bg-gray-900">
+                    Log Out
+                </button>
+            </div>
+
+            <!-- Mobile: Hamburger -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="flex flex-col hidden mt-3 md:hidden  space-y-3 bg-white shadow p-4 rounded-lg">
+            <div class="flex space-x-3 text-lg">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-regular fa-flag"></i>
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <!-- User Info -->
+            <div class="text-gray-800">
+                <p class="text-sm">Rashedul Karim</p>
+                <p class="text-blue-600 text-xs hover:underline hover:underline-offset-2 inline-block">
+                    rashedulkarim123@gmail.com
+                </p>
+            </div>
+
+            <!-- Profile + Logout -->
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-user"></i>
+                <button class="bg-[#484e5b] text-white px-4 py-1 rounded-lg hover:bg-gray-900">
+                    Log Out
+                </button>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // Toggle mobile menu
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <!-- End Navbar -->
+
+    <!-- Main Content -->
+    <div class="p-6 grid grid-cols-12 gap-6">
+
+        <!-- Left Sidebar -->
+        <div class="col-span-12 md:col-span-3">
+            <div class="bg-[#d7ecfd] rounded-lg shadow-md p-4">
+                <h2 class="text-lg font-bold mb-3">My Favorite List</h2>
+                <ul class="space-y-2 max-h-[400px] overflow-y-auto pr-2">
+                    <li class="flex justify-between items-center bg-white rounded-md px-3 py-2 shadow-sm">
+                        <span class="text-gray-700 hover:text-blue-600 font-semibold">01. DPS Opening Form</span>
+                        <button class="text-red-500">✖</button>
+                    </li>
+                    <li class="flex justify-between items-center bg-white rounded-md px-3 py-2 shadow-sm">
+                        <span class="text-gray-700 hover:text-blue-600 font-semibold">02. DPS History</span>
+                        <button class="text-red-500">✖</button>
+                    </li>
+                    <li class="flex justify-between items-center bg-white rounded-md px-3 py-2 shadow-sm">
+                        <span class="text-gray-700 hover:text-blue-600 font-semibold">03. DPS Collection</span>
+                        <button class="text-red-500">✖</button>
+                    </li>
+                    <li class="flex justify-between items-center bg-white rounded-md px-3 py-2 shadow-sm">
+                        <span class="text-gray-700 hover:text-blue-600 font-semibold">04. DPS Collection History</span>
+                        <button class="text-red-500">✖</button>
+                    </li>
+                    <li class="flex justify-between items-center bg-white rounded-md px-3 py-2 shadow-sm">
+                        <span class="text-gray-700 hover:text-blue-600 font-semibold">05. Remaining Payment</span>
+                        <button class="text-red-500">✖</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Dashboard Cards -->
+        <div class="col-span-12 md:col-span-9 grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- DPS Info -->
+            <div
+                class="bg-cyan-300 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="DPS Icon" class="h-16 mb-3">
+                <h3 class="font-bold">DPS Information</h3>
+            </div>
+
+            <!-- FDR Info -->
+            <div
+                class="bg-[#aee2e0] rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="FDR Icon" class="h-16 mb-3">
+                <h3 class="font-bold">FDR Information</h3>
+            </div>
+
+            <!-- Loan Info -->
+            <div
+                class="bg-blue-300 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="Loan Icon" class="h-16 mb-3">
+                <h3 class="font-bold">Loan Information</h3>
+            </div>
+
+            <!-- Membership -->
+            <div
+                class="bg-orange-200 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="Membership Icon" class="h-16 mb-3">
+                <h3 class="font-bold">Membership Apl</h3>
+            </div>
+
+            <!-- Unapproved User -->
+            <div
+                class="bg-blue-200 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="User Icon" class="h-16 mb-3">
+                <h3 class="font-bold">Unapproved User</h3>
+            </div>
+
+            <!-- Unapproved Member -->
+            <div
+                class="bg-orange-200 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="Member Icon" class="h-16 mb-3">
+                <h3 class="font-bold">Unapproved Member</h3>
+            </div>
+
+            <!-- Web Dashboard -->
+            <div
+                class="bg-cyan-300 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="Dashboard Icon" class="h-16 mb-3">
+                <h3 class="font-bold">Web Dashboard</h3>
+            </div>
+
+            <!-- Profile -->
+            <div
+                class="bg-blue-200 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition">
+                <img src="/logo/Abinashlogo.png" alt="Profile Icon" class="h-16 mb-3">
+                <h3 class="font-bold">Profile</h3>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
