@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Link -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap">
+    <!-- Link Tilwind CSS -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./input.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: 'Exo 2', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top NavBar -->
+     <nav class="NavBar flex justify-between  items-center bg-[#becfe9]">
+        <div>
+          <img class="w-20 p-2" src="https://i.ibb.co.com/qYTL7KRv/bari-wala-removebg-preview.png" alt="">
+        </div>
+        <div class="font-semibold text-2xl ">ABINASH FOUNDATION</div>
+        <div class="p-3">
+          <button class="bg-[#777a7a] text-white px-4 py-1 font-semibold hover:bg-gray-800">Log Out</button>
+        </div>
+     </nav>
+
+     <!-- Menu -->
+
+     <div class=" px-6 py-4 flex space-x-4 text-sm text-gray-700 bg-white">
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700" href="#">HOME</a>
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700" href="#">DPS OPENING FROM</a>
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700 border-b-2 border-blue-700" href="#">DPS HISTORY</a>
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700" href="#">DPS COLLECTION</a>
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700" href="#">DPS COLLECTION HISTORY</a>
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700" href="#">DPS WITHDRAW</a>
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700" href="#">REMAINING PAYMENT</a>
+        <a class="px-3 py-1 bg-white 
+          shadow-[-4px_-4px_2px_rgba(0,0,0,0.2)] 
+          hover:text-blue-700" href="#">MEMBERSHIP FROM</a>
+     </div>
+
+    <!-- DPS History Section -->
+
+<div class="p-6">
+  <h2 class="text-lg font-semibold text-gray-800 mb-4">DPS HISTORY</h2>
+  <div class="overflow-x-auto shadow-lg border border-gray-300 rounded-lg">
+    <table class="table-auto w-full text-sm text-gray-700">
+      <thead>
+        <tr class="bg-blue-200 text-gray-800">
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">SL No</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">DPS No</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Member ID</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Name</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Mobile</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Duration</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Last Date</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Inst. Rate</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Total Inst. No</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Monthly Inst.</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Principle Amount</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Mature Amount</th>
+          <th class="border border-gray-300 px-2 py-1 whitespace-nowrap">Print</th>
+        </tr>
+      </thead>
+      <tbody class="text-center bg-blue-50">
+        <tr>
+          <td class="border px-2 py-1">001</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013254</td>
+          <td class="border px-2 py-1">MEM-AB001</td>
+          <td class="border px-2 py-1">Rashedul Akem</td>
+          <td class="border px-2 py-1">0136******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">02 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">002</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">003</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">004</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">005</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">006</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">007</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">008</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">009</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">010</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">011</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">012</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">013</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">014</td>
+          <td class="border px-2 py-1 text-blue-600 underline cursor-pointer">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">015</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">016</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">017</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">018</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">019</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">020</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">021</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">022</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="border px-2 py-1">023</td>
+          <td class="border px-2 py-1 text-blue-600 underline">DPS-013256</td>
+          <td class="border px-2 py-1">MEM-AB003</td>
+          <td class="border px-2 py-1">Abdulla Al Samin</td>
+          <td class="border px-2 py-1">0146******</td>
+          <td class="border px-2 py-1">2 yr</td>
+          <td class="border px-2 py-1">10 Aug,23</td>
+          <td class="border px-2 py-1">10%</td>
+          <td class="border px-2 py-1">12</td>
+          <td class="border px-2 py-1">1,000</td>
+          <td class="border px-2 py-1">12,000</td>
+          <td class="border px-2 py-1">13,200</td>
+          <td class="border px-2 py-1">
+            <button class="text-green-600 hover:text-green-800 cursor-pointer">🖨️</button>
+          </td>
+        </tr>
+        <!-- More rows -->
+      </tbody>
+    </table>
+  </div>
+</div>
+  </body>
+</html>
+
+
+
