@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Abinash Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <!-- Container -->
+  <div class="bg-[#d7ecfd] shadow-lg rounded-lg p-10 w-full max-w-md">
+    
+    <!-- Logo -->
+    <div class="flex flex-col items-center mb-6">
+      <img src="/bari-wola/logo/Abinashlogo.png" alt="Logo" class="h-14 w-14 mb-2">
+      <h1 class="text-xl font-bold text-gray-800">ABINASH FOUNDATION</h1>
+      <p class="text-sm text-gray-500">Create your account</p>
+    </div>
+
+    <!-- Registration Form -->
+    <form action="#" method="POST" class="space-y-4">
+      <!-- Full Name -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" placeholder="Enter your full name"
+          class="mt-1 w-full px-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" placeholder="Enter your email"
+          class="mt-1 w-full px-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" placeholder="Enter password"
+          class="mt-1 w-full px-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+      </div>
+
+      <!-- Confirm Password -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Confirm Password</label>
+        <input type="password" placeholder="Re-enter password"
+          class="mt-1 w-full px-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+        Register
+      </button>
+    </form>
+
+    <!-- Login Link -->
+    <p class="text-sm text-gray-600 mt-4 text-center">
+      Already have an account?
+      <a href="login.html" class="text-blue-600 font-medium hover:underline">Login</a>
+    </p>
+  </div>
+
+</body>
+</html>
